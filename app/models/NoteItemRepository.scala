@@ -41,4 +41,7 @@ class NoteItemRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(imp
       // And finally, insert the person into the database
       ) += (content,isDone, noteId)
   }
+  private def func(dd:Int):Int = {
+    return 5
+  }
 }

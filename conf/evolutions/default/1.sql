@@ -10,7 +10,7 @@ create table note_item (
     content varchar not null ,
     is_done boolean not null ,
     note_id bigint,
-    CONSTRAINT note_item_f_key FOREIGN key (note_id) REFERENCES note(note_id) match simple
+    CONSTRAINT note_item_f_key FOREIGN key (note_id) REFERENCES note(id) match simple
     on update No action on delete cascade
 )
 # --- !Downs
